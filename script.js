@@ -1,12 +1,14 @@
 const navbar = document.querySelector('#navbar');
-let navTop = navbar.offsetTop+10;
+const navlogo = document.querySelector('.logo');
+let navTop = navbar.offsetTop+30;
 console.log(navTop);
 function fixedNav() {
-  if (window.scrollY >= navTop) {    
+  if (window.scrollY >= navTop) {
     navbar.classList.add('fixed');
-    console.log("helloo");
+    navlogo.classList.add('show');
   } else {
     navbar.classList.remove('fixed');    
+    navlogo.classList.remove('show');    
   }
 }
 document.addEventListener('DOMContentLoaded', function() {

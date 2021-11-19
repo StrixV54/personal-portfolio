@@ -35,10 +35,23 @@ header{
     left: 0;
     z-index: 1;
     padding: 10px 20px;
+    height: 80px;
     align-items: center;
     display: flex;
     justify-content: space-between;
     transition: all 0.2s ease;
+}
+#navbar.fixed{
+    position: fixed;
+    background-color: #0c1c2c;
+    height: 80px;
+    animation: slide-down 0.3s;
+    border-bottom: solid 1px #222;
+}
+@keyframes slide-down {
+    0%{
+        transform: translateY(-100px);
+    }
 }
 a{
     text-decoration: none;
@@ -53,13 +66,18 @@ ul{
 }
 .logo{
     font-size: large;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
+    visibility: hidden;
     float: left;
     align-items: center;
     color:cadetblue;
     justify-content: center;
     width: fit-content;
+}
+.logo.show{
+    visibility: visible;
+    animation: slide-down 0.3s;
 }
 .logo a{
     color: rgb(196, 255, 138);
@@ -73,6 +91,7 @@ li,li a{
 header ul{
     float: right;
     display: flex;
+    justify-content: flex-end;
 }
 header li a{
     display: inline-block;
@@ -80,6 +99,9 @@ header li a{
     padding: 8px 0;
     transition: all 0.2s ease-in;
     margin: 10px 25px;
+}
+header li a:active{
+    opacity: 0;
 }
 header li a::after {
     content: '';
@@ -97,11 +119,6 @@ header li a::after {
 header li a:hover::after,
 header li a:focus::after {
     transform: scale(1);
-}
-#navbar.fixed{
-    position: fixed;
-    background-color: #03111f;
-    height: 80px;
 }
 #Home{
     position: relative;
@@ -186,7 +203,7 @@ header li a:focus::after {
 #Skills{
     display: flex;
     flex-wrap: wrap;
-    background: rgb(223, 223, 223);
+    background: rgba(255, 255, 255, 0.705);
     padding: 30px 60px;
 }
 .headline{
@@ -209,15 +226,39 @@ header li a:focus::after {
 }
 #Skills li{
     margin: auto;
-    color: darkslategray;
+    color: rgba(47, 79, 79, 0.747);
     flex:1 0 21%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     text-transform: capitalize;
+}
+#Skills i{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: royalblue;
+}
+#Skills li:nth-child(2) i{
+    color: rgb(5, 170, 88);
+}
+#Skills li:nth-child(4) i{
+    color: rgb(109, 55, 209);
+}
+#Skills li:nth-child(3) i{
+    color: rgb(245, 114, 53);
+}
+#Skills li:nth-child(6) i{
+    color: rgb(247, 108, 44);
+}
+#Skills li:nth-child(8) i{
+    color: rgb(103, 11, 223);
 }
 #Skills img{
     display: inline-block;
-    margin: auto 60px 20px 50px;
+    margin: auto 40px 20px 15px;
     max-height: 350px;
     animation: jaggle 3s infinite alternate;
 }
@@ -229,7 +270,7 @@ header li a:focus::after {
 #About{
     display: flex;
     flex-wrap: wrap;
-    background: rgb(8, 62, 66);
+    background: rgba(8, 62, 66, 0.726);
     padding: 30px 60px;
 }
 #About img{
@@ -250,7 +291,7 @@ header li a:focus::after {
 #Projects{
     display: flex;
     flex-wrap: wrap;
-    background: rgb(39, 36, 46);
+    background: rgba(39, 36, 46, 0.685);
     padding: 30px 60px;
     justify-content: space-around;
 }
@@ -261,7 +302,7 @@ header li a:focus::after {
     border: solid 1px rgb(91, 48, 97);
     margin: 20px;
     align-items: center;
-    background-color: rgb(64, 49, 80);
+    background-color: rgb(42, 33, 51);
     justify-content: center;
     border-radius: 15px;
     padding: 10px;
@@ -274,4 +315,44 @@ header li a:focus::after {
 }
 .card p{
     margin: 10px;
+}
+#Contact{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(10, 114, 74, 0.466);
+    padding: 30px 60px;
+    justify-content: space-around;
+}
+#Contact .headline{
+    color: rgb(155, 178, 182);
+}
+#Contact img{
+    height: 300px;
+}
+#Contact div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    line-height: 30px;
+    color: lightgreen;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.bold{
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: #757575;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+}
+footer i{
+    color: crimson;
 }

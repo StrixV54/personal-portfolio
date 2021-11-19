@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrikant Vk | Portfolio</title>
     <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="navbar">
@@ -22,29 +24,29 @@
     <div id="Home">
         <div class="home-text">
         <p>Hi, I am</p>
-        <p>Shrikant Vishwakarma. I like frontend stuff.</p>
+        <p>Shrikant Vishwakarma. I like to build frontend stuff.</p>
         <p>Developer • Designer • Engineer</p>
         <a href="#">Resume</a>
         </div>
     </div>
-    <div id="Skills">
+    <div id="Skills" data-aos="fade-up">
         <p class="headline">Skills</p>
-        <ul>
-            <li>Java</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Photoshop</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>React</li>
+        <ul data-aos="fade-up">
+            <li><i class="fab fa-java fa-4x"></i> Java</li>
+            <li><i class="fas fa-copyright fa-4x"></i> C++</li>
+            <li><i class="fab fa-python fa-4x"></i> Python</li>
+            <li><i class="fas fa-ad fa-4x"></i> Photoshop</li>
+            <li><i class="fab fa-html5 fa-4x"></i> HTML5</li>
+            <li><i class="fab fa-css3 fa-4x"></i> CSS3</li>
+            <li><i class="fab fa-js fa-4x"></i> Javascript</li>
+            <li><i class="fab fa-react fa-4x"></i> React</li>
         </ul>
         <img src="/assets/skills.svg">
     </div>
-    <div id="About">
+    <div id="About" data-aos="fade-up">
         <p class="headline">About Me</p>
         <img src="/assets/info.svg">
-        <p>
+        <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos explicabo rerum
             ullam accusantium expedita quia soluta fugiat cumque sunt, ipsa magni assumenda lau
             dantium ab vero tempora obcaecati ea quod enim! Quo, corrupti, dolore, vel esse rem 
@@ -52,7 +54,7 @@
             error! Repellendus, tenetur. 
         </p>
     </div>
-    <div id="Projects">
+    <div id="Projects" data-aos="fade-up">
         <p class="headline">Projects</p>
         <div class="card">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat.</p>
@@ -64,11 +66,24 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat.</p>
         </div>
     </div>
+    <div id="Contact" data-aos="fade-up">
+        <p class="headline">Contact Me</p>
+        <img src="/assets/blogging.svg">
+        <div>
+            <span class="bold">Reach Me on gmail</span>
+             Email: xyz@gmail.com <br>
+             or <br>
+             <span class="bold">Call me anytime</span>
+            Contact No: 99xxxxxxxx
+        </div>
+    </div>
     <footer>
-    <p class="text-center">Created with
-        <span class="icon"><i class="fa fa-heart fa-lg"></i></span> 
-        by <a href="#" target="_blank">ShrikantVk</a></p>
+        <p>Created with
+        <span class="h-icon"><i class="fas fa-heart"></i></span> 
+        by ShrikantVk [Strix]</p>
     </footer>
     <script src="/script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
