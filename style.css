@@ -28,6 +28,17 @@ body{
     background-color: rgb(16, 29, 29);
     color: #ccc3b6;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+}
+ul{
+    list-style: none;
+    text-decoration: none; 
+    display: flex; 
+}
 header{
     position: absolute;
     width: 100%;
@@ -41,62 +52,6 @@ header{
     justify-content: space-between;
     transition: all 0.2s ease;
 }
-#navbar.fixed{
-    position: fixed;
-    background-color: #0c1c2c;
-    height: 80px;
-    animation: slide-down 0.3s;
-    border-bottom: solid 1px #222;
-}
-@keyframes slide-down {
-    0%{
-        transform: translateY(-100px);
-    }
-}
-a{
-    text-decoration: none;
-    color: inherit;
-    font-size: 15px;
-    font-family: 'Comfortaa', cursive;
-}
-ul{
-    list-style: none;
-    text-decoration: none; 
-    display: flex; 
-}
-.logo{
-    font-size: large;
-    /* padding: 10px; */
-    font-size: 15px;
-    visibility: hidden;
-    float: left;
-    display: flex;
-    align-items: center;
-    color:cadetblue;
-    justify-content: space-between;
-    width: fit-content;
-}
-.logo.show{
-    visibility: visible;
-    animation: slide-down 0.3s;
-}
-.menu-icon{
-    justify-content: space-around;
-    align-items: center;
-    display: none;
-}
-.line{
-    width: 28px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: rgb(175, 175, 175);
-    margin: 6px 0;  
-}
-.logo a{
-    color: rgb(196, 255, 138);
-    font-size: 35px;
-    font-family: 'Shalimar', cursive;
-}
 li,li a{
     font-weight: bold;
     color:rgb(219, 219, 219);
@@ -105,6 +60,8 @@ header ul{
     float: right;
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    flex-flow: row;
 }
 header li a{
     display: inline-block;
@@ -132,6 +89,53 @@ header li a::after {
 header li a:hover::after {
     transform: scale(1);
 }
+#navbar.fixed{
+    position: fixed;
+    background: #0c1c2c !important;
+    height: 80px;
+    animation: slide-down 0.3s;
+    border-bottom: solid 1px #222;
+}
+@keyframes slide-down {
+    0%{
+        transform: translateY(-100px);
+    }
+}
+.logo{
+    font-size: large;
+    /* padding: 10px; */
+    font-size: 15px;
+    visibility: hidden;
+    float: left;
+    display: flex;
+    align-items: center;
+    color:cadetblue;
+    justify-content: space-between;
+    width: fit-content;
+}
+.logo.show{
+    visibility: visible;
+    animation: slide-down 0.3s;
+}
+.menu-icon{
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+    display: none;
+}
+.line{
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(175, 175, 175);
+    margin: 6px 0;  
+}
+.logo a{
+    color: rgb(196, 255, 138);
+    font-size: 35px;
+    font-family: 'Shalimar', cursive;
+}
+
 #Home{
     position: relative;
     width: 100%;
@@ -177,11 +181,13 @@ header li a:hover::after {
 .home-text a{
     margin-top: 8px;
     margin-left: 2px;
+    max-height: 37px;
     padding: 1px 20px;
     display: inline-block;
     font-weight: bold;
     color: black;
     background: rgb(206, 206, 206);
+    /* background: rgba(84, 82, 128, 0.575); */
     z-index: 0;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -309,7 +315,7 @@ header li a:hover::after {
     border: solid 1px rgb(91, 48, 97);
     margin: 20px;
     align-items: center;
-    background-color: rgb(42, 33, 51);
+    /* background-color: rgb(42, 33, 51); */
     justify-content: center;
     flex-direction: column;
     flex-flow: column;
@@ -327,13 +333,9 @@ header li a:hover::after {
 }
 .card .pic{
     width: 100%;
-    /* overflow: hidden; */
     height: 100%;
-    background: url('https://source.unsplash.com/500x500/?project');
-    /* position: absolute; */
+    background: url('https://source.unsplash.com/500x500/?project') center center/cover;
     opacity: 80%;
-    /* z-index: -1; */
-    /* border: 1px solid #5e6364; */
     border-radius: 10px;
 }
 .card p{
@@ -375,7 +377,8 @@ footer p{
     margin: 5px 0;
 }
 footer i{
-    color: crimson;
+    color: rgb(247, 33, 75);
+    text-shadow: 0px 0px 5px rgba(235, 76, 110, 0.486);
 }
 @media only screen and (max-width:1050px){
     #Skills li{
@@ -398,17 +401,17 @@ footer i{
         align-items: center;
         flex-flow: column;
         flex-direction: column;
-        justify-content: baseline;
+        justify-content: space-between;
         /* height: 100vh; */
         height: 80px;
         padding: 20px;
     }
     header ul{
-        justify-content: flex-start;
         display: none;
-        flex-flow: column;
+        margin-bottom: 10vh;
         align-items: center;
-        flex-direction: column;
+        /* flex-flow: column;
+        flex-direction: column;*/ 
     }
     header li a{
         margin: 20px 0 40px 0;
@@ -440,9 +443,6 @@ footer i{
         max-width: 80%;
         padding: 0;
     }
-    .home-text{
-        margin-top: 40vh;
-    }
     p{
         padding: auto;
         margin: auto;
@@ -471,7 +471,8 @@ footer i{
         margin: 0;
     }
     .home-text{
-        line-height: 25px;
+        line-height: 30px;
+        margin-top: 40vh;
     }
     .home-text p:nth-child(1){
         font-size: 15px;
