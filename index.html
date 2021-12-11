@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrikant Vk | Portfolio</title>
     <link rel="stylesheet" href="/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    </head>
 <body>
     <header id="navbar">
         <div class="logo">
             <div> < <a href="#">Shrikant Vk</a> /> </div>
             <div class="menu-icon">
                 <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
             </div>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#" class="menu-a">Home</a></li>
+            <li><a href="#Skills" class="menu-a">Skills</a></li>
+            <li><a href="#Projects" class="menu-a">Projects</a></li>
+            <li><a href="#About"class="menu-a">About</a></li>
         </ul>
     </header>
     <div id="Home">
@@ -31,7 +27,7 @@
         <p>Hi, I am</p>
         <p>Shrikant Vishwakarma. I like to build frontend stuff.</p>
         <p>Developer • Designer • Engineer</p>
-        <a href="#">Resume</a>
+        <a href="#Contact">Contact Me</a>
         </div>
     </div>
     <div id="Skills" class="section" data-aos="fade-up">
@@ -48,30 +44,43 @@
         </ul>
         <img src="/assets/skills.svg">
     </div>
+    <div id="Projects" class="section" data-aos="fade-up">
+        <p class="headline">Projects</p>
+        <div class="card card1">
+           <div class="pic"></div>
+           <div class="head">
+            <span>NotesVault</span>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+           <p>An interactive Notes web app.</p>
+        </div>
+        <div class="card card2">
+            <div class="pic"></div>
+            <div class="head">
+                <span>YT-Player</span>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <p>YouTube Player and Downloader in Python.</p>
+        </div>
+        <div class="card card3">
+            <div class="pic"></div>
+            <div class="head">
+                <span>Emojify Ai</span>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <p>Ai project which shows emoji according to face expression.</p>
+        </div>
+    </div>
     <div id="About" class="section" data-aos="fade-up">
         <p class="headline">About Me</p>
         <img src="/assets/info.svg">
-        <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos explicabo rerum
-            ullam accusantium expedita quia soluta fugiat cumque sunt, ipsa magni assumenda lau
-            dantium ab vero tempora obcaecati ea quod enim! Quo, corrupti, dolore, vel esse rem 
-            aliquam porro ratione facilis voluptates corporis eum praesentium nostrum recusandae 
-            error! Repellendus, tenetur. 
-        </p>
-    </div>
-    <div id="Projects" class="section" data-aos="fade-up">
-        <p class="headline">Projects</p>
-        <div class="card">
-           <div class="pic"></div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat.</p>
-        </div>
-        <div class="card">
-            <div class="pic"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat.</p>
-        </div>
-        <div class="card">
-            <div class="pic"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat.</p>
+        <div data-aos="fade-up">
+            <ul>
+                <li>Hi, I am currently a student pursuing B.Tech with CSE.</li>
+                <li>I am proficient with languages and development tools.</li>
+                <li>My Hobbies include coding, drawing and sometimes playing videogames.</li>
+                <li>Thanks for the visit.</li>
+            </ul>
         </div>
     </div>
     <div id="Contact" class="section"  data-aos="fade-up">
@@ -79,10 +88,15 @@
         <img src="/assets/blogging.svg">
         <div>
             <span class="bold">Reach Me on gmail</span>
-             Email: xyz@gmail.com
+             Email: shrikantvk54@gmail.com
             <span class="bold">or</span> 
             <span class="bold">Call me anytime</span>
-            Contact No: 99xxxxxxxx
+            Contact No: 9910283831
+            <div class="social-bar">
+                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
         </div>
     </div>
     <footer>
@@ -91,6 +105,8 @@
         by ShrikantVk [Strix]</p>
     </footer>
     <script src="/script.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
