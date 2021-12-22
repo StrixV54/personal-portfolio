@@ -57,6 +57,13 @@ header{
     justify-content: space-between;
     transition: all 0.2s ease;
 }
+@font-face {
+    font-family: "Agustina Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Agustina Regular"),
+      url("./assets/Agustina.woff") format("woff");
+}
 li,li a{
     font-weight: bold;
     flex-direction: row;
@@ -102,7 +109,6 @@ header li a:hover::after {
     height: 80px;
     box-shadow: 8px 0px 10px #0c1c2c69;
     animation: slide-down 0.3s;
-    border-bottom: solid 1px #222;
 }
 @keyframes slide-down {
     0%{
@@ -112,14 +118,22 @@ header li a:hover::after {
 .logo{
     font-size: large;
     /* padding: 10px; */
-    font-size: 15px;
+    font-size: 20px;
     visibility: hidden;
     float: left;
     display: flex;
     align-items: center;
     color:cadetblue;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 15px;
+    align-items: center;
     width: fit-content;
+}
+.logo a{
+    color: rgb(196, 255, 138);
+    font-size: 25px;
+    margin: 0 5px;
+    font-family: "Agustina Regular", serif;
 }
 .logo.show{
     visibility: visible;
@@ -139,12 +153,12 @@ header li a:hover::after {
 .line::before, .line::after{
     content: '';
     position: absolute;
-    width: 25px;
+    width: 23px;
     height: 3px;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: all 0.2s ease;
     background-color: rgb(175, 175, 175);
-    margin: 6px 0;  
+    margin: 5px 0;  
 }
 .line::before{
     top: -10px;
@@ -153,11 +167,11 @@ header li a:hover::after {
     top: 10px;
 }
 .line{
-    width: 25px;
+    width: 23px;
     height: 3px;
-    border-radius: 2px;
+    border-radius: 4px;
     background-color: rgb(175, 175, 175);
-    margin: 6px 0;  
+    margin: 5px 0;
 }
 .menu-icon.show .line{
     background-color: transparent;
@@ -170,12 +184,6 @@ header li a:hover::after {
     top: 12.5px;
     transform: translateY(-13px) rotate(-45deg);
 }
-.logo a{
-    color: rgb(196, 255, 138);
-    font-size: 35px;
-    font-family: 'Shalimar', serif;
-}
-
 #Home{
     position: relative;
     width: 100%;
@@ -230,14 +238,15 @@ header li a:hover::after {
     margin-top: 15px;
     margin-left: 2px;
     max-height: 37px;
-    padding: 1px 20px;
+    padding: 0px 20px;
     display: inline-block;
     font-weight: bold;
     color: black;
     background: rgb(197, 193, 193);
     /* background: rgba(84, 82, 128, 0.575); */
     z-index: 0;
-    border-radius: 20px;
+    border-radius: 5px;
+    font-size: 14px;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -279,11 +288,13 @@ header li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    filter: brightness(120%);
+    backdrop-filter: blur(5px);
     padding: 60px;
     scroll-margin-top: 150px;
 }
 #Skills{
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(221, 229, 230, 0.829);
 }
 #About .headline,#Projects .headline{
     color: darkgrey;
@@ -291,6 +302,7 @@ header li a:hover::after {
 #Skills ul{
     display: grid;
     max-width: 60%;
+    min-width: 250px;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));;
     grid-gap: 10px;
 }
@@ -299,6 +311,7 @@ header li a:hover::after {
     color: rgb(47, 79, 79);
     /* flex:1 0 21%; */
     display: flex;
+    font-family: 'Open Sans', sans-serif;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -341,6 +354,7 @@ header li a:hover::after {
 }
 #About img{
     max-height: 350px;
+    max-width: 40%;
     margin-top: 20px;
     animation: jaggle 3s 2s infinite alternate;
 }
@@ -360,7 +374,11 @@ header li a:hover::after {
 }
 #About li{
     color:darkseagreen;
-    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    padding-left: 20px;
+    margin-left: 60px;
+    font-size: 18px;
 }
 #Projects{
     background: rgba(39, 36, 46, 0.85);
@@ -369,7 +387,7 @@ header li a:hover::after {
     height: 300px;
     display: flex;
     color: rgb(235, 235, 235);
-    border: solid 1px rgb(91, 48, 97);
+    border: solid 1px rgb(123, 66, 131);
     margin: 20px;
     align-items: center;
     /* background-color: rgb(42, 33, 51); */
@@ -377,7 +395,7 @@ header li a:hover::after {
     flex-grow: 1;
     flex-direction: column;
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
     max-width:28%;
     transition: all 0.2s ease;
     font-size: small;
@@ -385,26 +403,25 @@ header li a:hover::after {
 .card:hover{
     transform: translateY(-6px);
 }
-.card.card1 .pic{
+.card a{
+    background: #5e6364;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card .pic{
     width: 100%;
     height: 100%;
-    background: url('https://source.unsplash.com/-1_RZL8BGBM/500x500') center center/cover;
     opacity: 80%;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+.card.card1 .pic{
+    background: url('https://source.unsplash.com/-1_RZL8BGBM/500x500') center center/cover;
 }
 .card.card2 .pic{
-    width: 100%;
-    height: 100%;
     background: url('https://source.unsplash.com/09nSGnb8ivA/500x500') center center/cover;
-    opacity: 80%;
-    border-radius: 8px;
 }
 .card.card3 .pic{
-    width: 100%;
-    height: 100%;
     background: url('https://source.unsplash.com/_0aKQa9gr4s/500x500') center center/cover;
-    opacity: 80%;
-    border-radius: 8px;
 }
 .card p{
     margin: 10px;
@@ -412,16 +429,16 @@ header li a:hover::after {
 .card .head{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin: 8px 0;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
 .card .head span{
     width: fit-content;
-    padding: 5px 10px;
-    border-radius: 25px;
-    background-color: #b45d2b;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #7d2bb4;
 }
 
 #Contact{
@@ -432,6 +449,7 @@ header li a:hover::after {
 }
 #Contact img{
     max-height: 300px;
+    padding-left: 30px;
     animation: jaggle 3s infinite alternate;
 }
 #Contact div{
@@ -496,6 +514,10 @@ footer i{
     #About div{
         width: 50%;
     }
+    #About li{
+        padding-left: 10px;
+        margin-left: 10px;
+    }
     .home-text{
         line-height: 30px;
         margin-top: 50vh;
@@ -525,7 +547,7 @@ footer i{
         flex-direction: row;
         position: relative;
         height: 80px;
-        padding: 20px;
+        padding: 10px;
         z-index: 1;
     }
     header ul{
@@ -541,18 +563,20 @@ footer i{
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
-        transition: all 0.3s ease-in;
+        transition: all 0.4s ease-in;
         animation: open-down 0.3s;
-        animation-fill-mode: forwards;
     }
     @keyframes open-down {
         0%{
-            opacity: 0.5;
+            opacity: 0;
             padding-right: 60vh;
             transform: translateX(-50vh);
         }
+        40%{
+            padding-right: 50vh;
+        }
         80%{
-            padding-right: 20vh;
+            transform: translateX(0);
         }
     }
     header li,header li a{
@@ -574,17 +598,25 @@ footer i{
     }
     .logo{
         width: 100%;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-top: 0;
         /* margin-top: 10px; */
     }
     #navbar.fixed{
         position: fixed;
         background-color: #0c1c2c;
-        /* height: 100vh; */
-        height: 70px;
-        border-bottom: solid 1px #222;
+        height: 60px;
     }
 }
 @media only screen and (max-width:600px){
+    .logo{
+        padding-top: 0;
+    }
+    .logo a{
+        height: 40px;
+        font-size: 22px;
+    }
     .headline{
         margin-bottom: 20px;
     }
@@ -624,6 +656,9 @@ footer i{
         text-align: left;
         width: 90%;
         margin: 0;
+    }
+    #About img{
+        max-width: 100%;
     }
     .home-text{
         line-height: 30px;

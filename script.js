@@ -25,13 +25,13 @@ for (let i = 0; i < navlink.length; i++){
   });
 }
 navmenu.addEventListener("click",()=>{
-  // console.log("-> "+item);
-  if(item.style.display==="none"){
-    item.style.display="block";
-    navmenu.classList.add('show');
-  }
-  else{
+  if(item.style.display=="block"){
     item.style.display="none";
     navmenu.classList.remove('show');
+  }
+  else{
+    console.log("Hey");
+    item.style.display="block";
+    navmenu.classList.add('show');
   }
 });
