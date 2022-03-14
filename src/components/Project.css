@@ -1,0 +1,75 @@
+#Projects{
+    background: rgba(39, 36, 46, 0.85);
+}
+.card{
+    height: 300px;
+    display: flex;
+    color: rgb(235, 235, 235);
+    border: solid 1px rgb(123, 66, 131);
+    margin: 20px;
+    align-items: center;
+    /* background-color: rgb(42, 33, 51); */
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 5px;
+    max-width:28%;
+    transition: all 0.2s ease;
+    font-size: small;
+}
+.card:hover{
+    transform: translateY(-6px);
+}
+.card a{
+    background: #5e6364;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card .pic{
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    border-radius: 10px;
+}
+.card.card1 .pic{
+    background: url('https://source.unsplash.com/-1_RZL8BGBM/500x500') center center/cover;
+}
+.card.card2 .pic{
+    background: url('https://source.unsplash.com/09nSGnb8ivA/500x500') center center/cover;
+}
+.card.card3 .pic{
+    background: url('https://source.unsplash.com/_0aKQa9gr4s/500x500') center center/cover;
+}
+.card p{
+    margin: 10px;
+}
+.card .head{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card .head span{
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #7d2bb4;
+}
+#Projects .headline{
+    color: darkgrey;
+}
+@media only screen and (max-width:1050px){
+    .card{
+        max-width: 30%;
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width:600px){
+    .card{
+        max-width: 100%;
+        width: 80%;
+    }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* border: solid 1px rgb(61, 61, 61); */
+}
+body{
+    background-color: rgb(24, 45, 53);
+    background-image: url('https://source.unsplash.com/DjjaZybYx4I/1600x900');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #5e6364;
+}
+::-webkit-scrollbar-corner {
+    background-color: #2e2f30;
+}
+::-webkit-scrollbar {
+    background-color: rgb(16, 29, 29);
+    color: #ccc3b6;
+}
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("../public/assets/Agustina.woff") format("woff");
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    font-family: 'Comfortaa', Cambria;
+}
+ul{
+    list-style: none;
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: row;
+}
+
+li,li a{
+  font-weight: bold;
+  flex-direction: row;
+  color:rgb(219, 219, 219);
+}

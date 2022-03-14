@@ -1,0 +1,38 @@
+
+#Contact{
+    background: rgba(10, 85, 56, 0.8);
+}
+#Contact .headline{
+    color: rgb(155, 178, 182);
+}
+#Contact img{
+    max-height: 300px;
+    padding-left: 30px;
+    animation: jaggle 3s infinite alternate;
+}
+#Contact div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    line-height: 30px;
+    color: lightgreen;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#Contact .social-bar{
+    display: flex;
+    flex-grow: 0;
+    width: 100%;
+    flex-direction: row;
+}
+#Contact .social-bar i{
+    margin: 10px;
+    color: rgb(126, 169, 250);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+#Contact .social-bar i:hover{
+    color:rgb(93, 141, 196);
+}

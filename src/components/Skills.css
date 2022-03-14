@@ -1,0 +1,73 @@
+#Skills{
+    background: rgba(221, 229, 230, 0.829);
+}
+#Skills ul{
+    display: grid;
+    max-width: 60%;
+    min-width: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));;
+    grid-gap: 10px;
+}
+#Skills li{
+    margin: 10px 10px;
+    color: rgb(47, 79, 79);
+    /* flex:1 0 21%; */
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#Skills i{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: royalblue;
+}
+#Skills li:nth-child(2) i{
+    color: rgb(5, 170, 88);
+}
+#Skills li:nth-child(4) i{
+    color: rgb(109, 55, 209);
+}
+#Skills li:nth-child(3) i{
+    color: rgb(245, 114, 53);
+}
+#Skills li:nth-child(6) i{
+    color: rgb(247, 108, 44);
+}
+#Skills li:nth-child(8) i{
+    color: rgb(103, 11, 223);
+}
+#Skills img{
+    max-height: 300px;
+    max-width: auto;
+    animation: jaggle 3s infinite alternate;
+}
+@keyframes jaggle {
+    0%{
+        transform: translateY(-20px);
+    }
+}
+@media only screen and (max-width:1050px){
+    #Skills li{
+        flex:1 0 21%;
+        margin: 20px 15px;
+    }
+    #Skills ul{
+        max-width: 50%;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    
+    #Skills li{
+        margin: 20px 15px;
+    }
+    #Skills ul{
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));;
+    }
+}

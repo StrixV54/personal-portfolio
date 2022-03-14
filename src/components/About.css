@@ -1,0 +1,58 @@
+#About{
+    background: rgba(8, 62, 66, 0.85);
+}
+#About img{
+    max-height: 350px;
+    max-width: 40%;
+    margin-top: 20px;
+    animation: jaggle 3s 2s infinite alternate;
+}
+#About div{
+    padding:10px;
+    width: 60%;
+    display: flex;
+}
+#About ul{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 40px;
+    justify-content: center;
+    list-style: circle;
+    line-height: 40px;
+    flex-direction: column;
+}
+#About li{
+    color:darkseagreen;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    padding-left: 20px;
+    margin-left: 60px;
+    font-size: 18px;
+}
+#About .headline{
+    color: darkgrey;
+}
+@media only screen and (max-width:1050px){
+    #About div{
+        width: 50%;
+    }
+    #About li{
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    #About div{
+        width: 100%;
+    }
+    #About ul{
+        padding: 40px 20px;
+        align-items: baseline;
+        text-align: left;
+        width: 90%;
+        margin: 0;
+    }
+    #About img{
+        max-width: 100%;
+    }
+}
