@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 function About(){
     return (
-        <Fade bottom cascade>
+        <Fade bottom>
         <div id="About" className="section">
             <p className="headline">About Me</p>
             <img src="/assets/blogging.svg"/>

@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 function Contact(){
     return (
-        <Fade bottom cascade>
+        <Fade bottom>
         <div id="Contact" className="section"  data-aos="fade-up">
             <p className="headline">Contact Me</p>
             <img src="/assets/thinking.svg"/>
@@ -15,9 +15,9 @@ function Contact(){
                 <span className="bold">Call me anytime</span>
                 Contact No: 9910283831
                 <div className="social-bar">
-                    <i className="fab fa-github fa-2x"></i>
-                    <i className="fab fa-twitter-square fa-2x"></i>
-                    <i className="fab fa-facebook-square fa-2x"></i>
+                    <i className="fab fa-github fa-3x" href=""></i>
+                    <i className="fab fa-twitter-square fa-3x"></i>
+                    <i className="fab fa-facebook-square fa-3x"></i>
                 </div>
             </div>
         </div>

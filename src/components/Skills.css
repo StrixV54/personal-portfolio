@@ -1,5 +1,8 @@
 #Skills{
-    background: rgba(221, 229, 230, 0.829);
+    background: rgba(255, 255, 255, 0.13);
+}
+.headline {
+    color:rgb(157, 169, 179);
 }
 #Skills ul{
     display: grid;
@@ -10,7 +13,7 @@
 }
 #Skills li{
     margin: 10px 10px;
-    color: rgb(47, 79, 79);
+    color: rgb(141, 173, 173);
     /* flex:1 0 21%; */
     display: flex;
     font-family: 'Open Sans', sans-serif;

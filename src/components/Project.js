@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 function Project(){
     return (
-        <Fade bottom cascade>
+        <Fade bottom>
         <div id="Projects" className="section" data-aos="fade-up">
             <p className="headline">Projects</p>
             <div className="card card1">

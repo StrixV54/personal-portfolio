@@ -11,17 +11,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    filter: brightness(120%);
-    backdrop-filter: blur(5px);
-    padding: 60px;
+    padding: 50px 40px;
+    margin: 20px 60px;
     scroll-margin-top: 150px;
+    
+    /* background: rgba( 255, 255, 255, 0.3 ); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.082);
 }
 @media only screen and (max-width:1050px){
     img{
         max-width: 50%;
     }
+    .section{
+        padding: 30px;
+        margin: 20px 30px;
+    }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:800px){
     img{
         margin: 20px 0;
         max-width: 80%;
@@ -30,5 +40,11 @@
     p{
         padding: auto;
         margin: auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .section{
+        padding: 10px;
+        margin: 10px 20px;
     }
 }
