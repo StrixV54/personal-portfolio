@@ -4,6 +4,11 @@
 .headline {
     color:rgb(157, 169, 179);
 }
+ul img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+}
 #Skills ul{
     display: grid;
     max-width: 60%;
@@ -44,7 +49,7 @@
 #Skills li:nth-child(8) i{
     color: rgb(103, 11, 223);
 }
-#Skills img{
+#Skills .side-img{
     max-height: 300px;
     max-width: auto;
     animation: jaggle 3s infinite alternate;

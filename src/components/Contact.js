@@ -10,10 +10,10 @@ function Contact(){
             <img src="/assets/thinking.svg"/>
             <div>
                 <span className="bold">Reach Me on gmail</span>
-                Email: shrikantvk54@gmail.com
+                Email: shrikantkumar54@gmail.com
                 <span className="bold">or</span> 
                 <span className="bold">Call me anytime</span>
-                Contact No: 9910283831
+                Contact No: 99XXXXXXXX
                 <div className="social-bar">
                     <i className="fab fa-github fa-3x" href=""></i>
                     <i className="fab fa-twitter-square fa-3x"></i>
